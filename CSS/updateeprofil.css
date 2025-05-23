@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Jost", sans-serif;
+  background: linear-gradient(to bottom, #001f3f, #062d64, #001f3f);
+}
+
+.update-profil {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px 40px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.update-profil img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 25px;
+  transition: box-shadow 0.3s ease;
+}
+
+.update-profil img:hover {
+  box-shadow: 0 0 15px #74d3ff;
+}
+
+/* Form */
+form {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  gap: 30px;
+  flex-wrap: nowrap; /* agar input berjejer melebar */
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.input-group {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+/* Label spans */
+.input-group span {
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+  margin-left: 5px;
+}
+
+/* Inputs */
+.box {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.box::placeholder {
+  color: #aaa;
+}
+
+.box:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #ffffff;
+}
+
+/* Buttons */
+.btn,
+.delete-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: none;
+  user-select: none;
+}
+
+/* Submit button */
+.btn {
+  background-color: #30a36a;
+  color: #fff;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+.btn:hover {
+  background-color: #046533;
+}
+
+/* Go back button */
+.delete-btn {
+  background-color: #aa0a0a;
+  color: #fff;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+.delete-btn:hover {
+  background-color: rgb(168, 18, 18);
+  color: #fff;
+}
+
+.message{
+  width: 100%;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  background-color:#aa0a0a;
+  color: white;
+  font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .input-group {
+    flex: 1 1 100%;
+  }
+}
+
